@@ -1,0 +1,193 @@
+
+
+  /* .product-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: white;
+    max-width: 380px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .availability-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  
+  .product-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .product-title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .price-section {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c3e50;
+    white-space: nowrap;
+  }
+  
+  .location-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .location-icon {
+    width: 16px;
+    height: 16px;
+    fill: #666;
+  }
+  
+  .section-title {
+    margin: 8px 0 4px;
+    font-weight: 600;
+    color: #444;
+    font-size: 0.95rem;
+  }
+  
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    font-size: 0.85rem;
+    color: #555;
+  }
+  
+  .amenity-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .amenity-bullet {
+    color: #3498db;
+  }
+  
+  .agent-section {
+    margin-top: 8px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+  }
+  
+  .agent-info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .agent-icon {
+    width: 24px;
+    height: 24px;
+    fill: #666;
+    flex-shrink: 0;
+  }
+  
+  .agent-name {
+    margin: 0;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .agent-agency {
+    margin: 2px 0;
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .agent-contact {
+    display: block;
+    color: #3498db;
+    text-decoration: none;
+    font-size: 0.85rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+  }
+  
+  .primary-btn {
+    flex: 1;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .primary-btn:hover {
+    background: #2980b9;
+  }
+  
+  .secondary-btn {
+    flex: 1;
+    background: white;
+    color: #3498db;
+    border: 1px solid #3498db;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .secondary-btn:hover {
+    background: #f5f9fd;
+  }
+  
+  .btn-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor; }
+  // } */

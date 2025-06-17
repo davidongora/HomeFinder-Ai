@@ -1,0 +1,377 @@
+[
+  {
+    "id": 1,
+    "name": "Kilimani Luxury Apartments",
+    "type": "Apartment",
+    "price": 25000000,
+    "availableUnits": 5,
+    "viewingDays": [
+      {
+        "day": ["Monday", "Tuesday"],
+        "time": ["10:00 AM", "2:00 PM"]
+      },
+      {
+        "day": ["Wednesday", "Thursday"],
+        "time": []
+      },
+      {
+        "day": ["Sunday"],
+        "time": []
+      }
+    ],
+    "listing": {
+      "type": "For Sale",
+      "dateListed": "2023-10-01"
+    },
+    "value": [
+      "Luxury"
+      
+    ],
+    "location": {
+      "city": "Nairobi",
+      "subcounty": "Kilimani",
+      "rooms": ["3 bedrooms", "2 bathrooms", "1 living room", "1 kitchen", "120 sq m"],
+      "address": "Mukoma Road, Off Ngong Road"
+    },
+    "nearbyAmenities": ["Swimming Pool", "Gym", "24/7 Security", "Parking"],
+    "nearby": ["Yaya Centre (0.5km)", "Nairobi Hospital (2km)", "Junction Mall (3km)"],
+    "agent": {
+      "name": "Sarah K.",
+      "agency": "Prime Properties",
+      "contact": "+254712345678"
+    },
+    "photo": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
+  },
+  {
+    "id": 2,
+    "name": "Nyali Beach House",
+    "type": "Villa",
+    "price": 48000000,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "availableUnits": 5,
+    "viewingDays": [
+      {
+        "day": ["Monday", "Friday"],
+        "time": ["9:00 AM", "3:00 PM"]
+      },
+      {
+        "day": ["Saturday"],
+        "time": ["10:00 AM", "1:00 PM"]
+      }
+    ],
+    "listing": {
+      "type": "For Sale",
+      "dateListed": "2023-09-15"
+    },
+    "value": [
+      "Beachfront"
+    ],
+    "location": {
+      "city": "Mombasa",
+      "subcounty": "Nyali",
+      "rooms": ["4 bedrooms", "3 bathrooms", "2 living rooms", "1 kitchen", "250 sq m"],
+      "address": "Beach Road, Nyali"
+    },
+    "nearbyAmenities": ["Private Beach Access", "Balcony", "Garden", "CCTV", "wifi", "Laundry"],
+    "nearby": ["Nyali Beach (0.1km)", "City Mall (1.5km)", "Aga Khan Hospital (3km)"],
+    "agent": {
+      "name": "James M.",
+      "agency": "Coastal Homes",
+      "contact": "+254723456789"
+    },
+    "photo": "https://images.unsplash.com/photo-1561501900-3701fa6a0864"
+  },
+  {
+    "id": 3,
+    "name": "Westlands Office Space",
+    "type": "Commercial",
+    "price": 35000000,
+    "size": "2000 sq ft",
+    "availableUnits": 5,
+    "viewingDays": [
+      {
+        "day": ["Tuesday", "Thursday"],
+        "time": ["11:00 AM", "4:00 PM"]
+      }
+    ],
+    "listing": {
+      "type": "For Sale",
+      "dateListed": "2023-08-20"
+    },
+    "value": [
+      "Prime Business Location"
+      
+    ],
+    "location": {
+      "city": "Nairobi",
+      "subcounty": "Westlands",
+      "rooms": ["Open plan office space", "Conference rooms", "Reception area"],
+      "address": "Waiyaki Way"
+    },
+    "nearbyAmenities": ["Elevator", "Fiber Internet", "Meeting Rooms"],
+    "nearby": ["Sarit Centre (0.3km)", "Nairobi CBD (5km)"],
+    "agent": {
+      "name": "David O.",
+      "agency": "Urban Spaces",
+      "contact": "+254734567890"
+    },
+    "photo": "https://images.unsplash.com/photo-1493809842364-78817add7ffb"
+  },
+  {
+    "id": 4,
+    "name": "Thika Family Home",
+    "type": "House",
+    "price": 12000000,
+    "bedrooms": 4,
+    "bathrooms": 2,
+    "availableUnits": 5,
+    "viewingDays": [
+      {
+        "day": ["Wednesday", "Saturday"],
+        "time": ["10:00 AM", "2:00 PM"]
+      }
+    ],
+    "listing": {
+      "type": "For Sale",
+      "dateListed": "2023-10-05"
+    },
+    "value": [
+      "Family-friendly"
+    ],
+    "location": {
+      "city": "Thika",
+      "subcounty": "Thika Town",
+      "rooms": ["4 bedrooms", "2 bathrooms", "1 living room", "1 kitchen", "1 dining room", "150 sq m"],
+      "address": "Gatuanyaga Estate"
+    },
+    "nearbyAmenities": ["Compound", "Water Tank", "DSL Internet"],
+    "nearby": ["Thika Road Mall (2km)", "Gatundu Hospital (5km)"],
+    "agent": {
+      "name": "Grace W.",
+      "agency": "Homes & Land",
+      "contact": "+254745678901"
+    },
+    "photo": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750"
+  },
+  {
+    "id": 5,
+    "name": "Kileleshwa Studio",
+    "type": "Apartment",
+    "price": 8500000,
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "availableUnits": 5,
+    "viewingDays": [
+      {
+        "day": ["Monday", "Wednesday", "Friday"],
+        "time": ["9:00 AM", "1:00 PM", "4:00 PM"]
+      }
+    ],
+    "listing": {
+      "type": "For Sale",
+      "dateListed": "2023-09-01"
+    },
+    "value": [
+      "Affordable"
+    ],
+    "location": {
+      "city": "Nairobi",
+      "subcounty": "Kileleshwa",
+      "rooms": ["1 bedroom", "1 bathroom", "Living area", "Kitchenette", "45 sq m"],
+      "address": "Lenana Road"
+    },
+    "nearbyAmenities": ["Shared Gym", "Balcony", "Water Backup"],
+    "nearby": ["Yaya Centre (1km)", "State House (2km)"],
+    "agent": {
+      "name": "Mike N.",
+      "agency": "City Apartments",
+      "contact": "+254756789012"
+    },
+    "photo": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267"
+  },
+  {
+    "id": 6,
+    "name": "Naivasha Farmhouse",
+    "type": "Farm",
+    "price": 32000000,
+    "size": "5 Acres",
+    "availableUnits": 5,
+    "viewingDays": [
+      {
+        "day": ["Friday", "Saturday", "Sunday"],
+        "time": ["8:00 AM", "12:00 PM"]
+      }
+    ],
+    "listing": {
+      "type": "For Sale",
+      "dateListed": "2023-08-15"
+    },
+    "value": [
+      "Agricultural Potential"
+      
+    ],
+    "location": {
+      "city": "Naivasha",
+      "subcounty": "Naivasha",
+      "rooms": ["Main house", "Staff quarters", "Greenhouse", "Land"],
+      "address": "Moi South Lake Road"
+    },
+    "nearbyAmenities": ["Borehole", "Greenhouse", "Staff Quarters"],
+    "nearby": ["Lake Naivasha (1km)", "Naivasha Town (8km)"],
+    "agent": {
+      "name": "Susan A.",
+      "agency": "Countryside Properties",
+      "contact": "+254767890123"
+    },
+    "photo": "https://images.unsplash.com/photo-1512916194211-3f2b7f5f7de3"
+  },
+  {
+    "id": 7,
+    "name": "Runda Mansion",
+    "type": "Mansion",
+    "price": 95000000,
+    "bedrooms": 6,
+    "bathrooms": 5,
+    "availableUnits": 5,
+    "viewingDays": [
+      {
+        "day": ["Tuesday", "Thursday"],
+        "time": ["10:00 AM", "3:00 PM"]
+      },
+      {
+        "day": ["Saturday"],
+        "time": ["11:00 AM"]
+      }
+    ],
+    "listing": {
+      "type": "For Sale",
+      "dateListed": "2023-07-20"
+    },
+    "value": [
+      "Luxury"
+    ],
+    "location": {
+      "city": "Nairobi",
+      "subcounty": "Runda",
+      "rooms": ["6 bedrooms", "5 bathrooms", "2 living rooms", "1 kitchen", "1 dining room", "1 study", "450 sq m"],
+      "address": "Red Hill Road"
+    },
+    "nearbyAmenities": ["Swimming Pool", "Home Theatre", "Guest House", "Electric Fence"],
+    "nearby": ["UN Complex (3km)", "Gigiri (4km)"],
+    "agent": {
+      "name": "Brian L.",
+      "agency": "Elite Homes",
+      "contact": "+254778901234"
+    },
+    "photo": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914"
+  },
+  {
+    "id": 8,
+    "name": "Kitengela Townhouse",
+    "type": "Townhouse",
+    "price": 18000000,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "availableUnits": 5,
+    "viewingDays": [
+      {
+        "day": ["Wednesday", "Sunday"],
+        "time": ["9:00 AM", "2:00 PM"]
+      }
+    ],
+    "listing": {
+      "type": "For Sale",
+      "dateListed": "2023-09-10"
+    },
+    "value": [
+      "Affordable"
+        ],
+    "location": {
+      "city": "Kitengela",
+      "subcounty": "Kajiado East",
+      "rooms": ["3 bedrooms", "2 bathrooms", "1 living room", "1 kitchen", "120 sq m"],
+      "address": "KMA Road"
+    },
+    "nearbyAmenities": ["Parking", "Garden", "Backup Generator"],
+    "nearby": ["Kitengela Mall (1km)", "Nairobi National Park (15km)"],
+    "agent": {
+      "name": "Lucy K.",
+      "agency": "Savannah Properties",
+      "contact": "+254789012345"
+    },
+    "photo": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688"
+  },
+  {
+    "id": 9,
+    "name": "Karen Cottage",
+    "type": "Cottage",
+    "price": 42000000,
+    "bedrooms": 3,
+    "availableUnits": 5,
+    "bathrooms": 2,
+    "viewingDays": [
+      {
+        "day": ["Friday", "Saturday"],
+        "time": ["10:00 AM", "3:00 PM"]
+      }
+    ],
+    "listing": {
+      "type": "For Sale",
+      "dateListed": "2023-08-05"
+    },
+    "value": [
+      "Charming"
+    ],
+    "location": {
+      "city": "Nairobi",
+      "subcounty": "Karen",
+      "rooms": ["3 bedrooms", "2 bathrooms", "1 living room", "1 kitchen", "1 dining room", "180 sq m"],
+      "address": "Karen Road"
+    },
+    "nearbyAmenities": ["Fireplace", "Mature Garden", "Staff Quarters"],
+    "nearby": ["Karen Shopping Centre (1km)", "Giraffe Centre (3km)"],
+    "agent": {
+      "name": "Peter M.",
+      "agency": "Karen Homes",
+      "contact": "+254790123456"
+    },
+    "photo": "https://images.unsplash.com/photo-1566073771259-6a8506099945"
+  },
+  {
+    "id": 10,
+    "name": "Lamu Island Villa",
+    "type": "Villa",
+    "price": 65000000,
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "availableUnits": 5,
+    "viewingDays": [
+      {
+        "day": ["Monday", "Wednesday", "Friday"],
+        "time": ["9:00 AM", "1:00 PM"]
+      }
+    ],
+    "listing": {
+      "type": "For Sale",
+      "dateListed": "2023-07-15"
+    },
+    "value": [
+      "Beachfront"
+    ],
+    "location": {
+      "city": "Lamu",
+      "subcounty": "Lamu Town",
+      "rooms": ["5 bedrooms", "4 bathrooms", "2 living rooms", "1 kitchen", "1 dining room", "300 sq m"],
+      "address": "Seafront Road"
+    },
+    "nearbyAmenities": ["Private Dock", "Rooftop Terrace", "Housekeeper"],
+    "nearby": ["Lamu Old Town (0.5km)", "Shella Beach (1km)"],
+    "agent": {
+      "name": "Amina S.",
+      "agency": "Island Properties",
+      "contact": "+254701234567"
+    },
+    "photo": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
+  }
+]

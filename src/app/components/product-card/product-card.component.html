@@ -1,0 +1,128 @@
+<div class="bg-white rounded-2xl shadow-md overflow-hidden">
+  <!-- Property Image and Badge -->
+  <div class="relative h-40 bg-gray-100 flex items-center gap-3 justify-center">
+    <img
+      [ngSrc]="product.photo"
+      [alt]="product.name"
+      width="320"
+      height="320"
+      class="object-cover w-full h-full"
+      loading="eager"
+      onerror="this.src = 'https://placehold.co/600x400'"
+    />
+    <span
+      *ngIf="product.availableUnits"
+      class="absolute top-2 right-2 bg-gradient-to-r from-purple-400 to-blue-500 text-white text-xs font-semibold px-2 py-1 rounded-full"
+    >
+      {{ product.availableUnits }} available
+    </span>
+  </div>
+
+  <!-- Property Content -->
+  <div class="p-4">
+    <!-- Title and Price -->
+    <h3 class="text-lg font-semibold text-gray-800">{{ product.name }}</h3>
+    <div class="flex items-center gap-2 mt-1">
+      <p class="text-xl font-bold text-blue-600">
+        {{ product.price | currency : "KSh " : "symbol" : "1.0-0" }}
+      </p>
+      <ng-container *ngFor="let tag of product.value">
+        <span
+          class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full"
+        >
+          {{ tag }}
+        </span>
+      </ng-container>
+    </div>
+
+    <!-- Features -->
+    <div class="grid grid-cols-2 gap-2 text-center my-4">
+      <div
+        *ngFor="let feature of product.location.rooms"
+        class="bg-gray-100 rounded-lg p-2"
+      >
+        <p class="text-sm font-bold">{{ feature }}</p>
+      </div>
+    </div>
+
+    <!-- Location -->
+    <div class="bg-purple-50 rounded-lg p-2 flex items-start gap-2 mb-4">
+      <svg
+        class="w-5 h-5 text-purple-600 mt-1"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+        />
+      </svg>
+      <p class="text-sm text-gray-700">
+        <span *ngIf="product.location.city">{{ product.location.city }}</span>
+        <span *ngIf="product.location.subcounty"
+          >, {{ product.location.subcounty }}</span
+        >
+        <span *ngIf="product.location.address">
+          • {{ product.location.address }}</span
+        >
+      </p>
+    </div>
+
+    <!-- Nearby Amenities -->
+    <div class="bg-white border border-gray-200 rounded-lg p-3 mb-4">
+      <p class="font-semibold text-sm text-gray-800 mb-2 flex items-center">
+        🏡 Nearby Amenities
+      </p>
+      <div class="grid grid-cols-2 gap-2 text-xs">
+        <div
+          *ngFor="let amenity of product.nearbyAmenities"
+          class="bg-blue-50 text-blue-700 font-medium py-1 px-2 rounded-full text-center"
+        >
+          {{ amenity }}
+        </div>
+      </div>
+    </div>
+
+    <!-- Agent Details -->
+    <div
+      *ngIf="product.agent"
+      class="bg-green-50 rounded-lg p-3 flex items-start gap-3 mb-4"
+    >
+      <div
+        class="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center font-bold"
+      >
+        {{
+          product.agent.name.split(" ")[0][0] +
+            product.agent.name.split(" ")[1][0]
+        }}
+      </div>
+      <div>
+        <p class="font-semibold text-gray-800">{{ product.agent.name }}</p>
+        <p class="text-xs text-gray-500">{{ product.agent.agency }}</p>
+        <a
+          href="tel:{{ product.agent.contact }}"
+          class="text-green-600 font-medium text-sm"
+        >
+          phone {{ product.agent.contact }}
+        </a>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex items-center gap-2">
+      <button
+        (click)="onAddToCartClicked(product)"
+        class="flex-1 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium py-2 px-4 rounded-xl shadow"
+      >
+        <i class="material-icons align-middle mr-1">favorite</i>
+        Save Property
+      </button>
+      <button
+        (click)="onAddToScheduledViewingClicked(product)"
+        class="bg-gray-100 text-purple-600 font-semibold px-3 py-2 rounded-xl text-xs"
+      >
+        <i class="material-icons align-middle mr-1">event</i>
+        Schedule Viewing
+      </button>
+    </div>
+  </div>
+</div>

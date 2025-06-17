@@ -1,0 +1,76 @@
+<nav
+  class="bw-desktop-navbar bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-4 flex justify-between items-center shadow-md fixed top-0 left-0 right-0 z-50"
+>
+  <!-- Left Section -->
+  <div class="bw-left-navbar flex items-center space-x-3">
+    <div class="bytewise-logo text-white text-2xl flex items-center space-x-2">
+      <i class="material-icons text-3xl">home</i>
+      <span class="text-lg font-semibold">HomeFinder</span>
+      <!-- Optional Image Logo -->
+      <!-- <img src="assets/icons/home_icon.svg" alt="Bytewise Logo" class="h-10 w-auto" /> -->
+    </div>
+  </div>
+
+  <!-- Right Section -->
+  <div class="bw-right-navbar flex items-center space-x-6">
+    <!-- AI Agent Button (Mobile Only) -->
+    <div class="lg:hidden flex items-center">
+      <button
+        class="bg-white text-purple-600 font-semibold text-sm px-4 py-2 rounded-full shadow-md hover:bg-purple-100 transition"
+      >
+        Ai Agent
+      </button>
+    </div>
+
+    <!-- In your template -->
+    <!-- (click)="openViewingsDialog(); $event.stopPropagation()" -->
+
+    <div class="cart-icon relative flex items-center space-x-1 cursor-pointer">
+      <i class="material-icons text-2xl">event</i>
+      <span
+        class="cart-item-count absolute -top-2 -right-3 bg-white text-red-600 text-xs font-bold px-1.5 py-0.5 rounded-full shadow"
+      >
+        {{ productService.eventsCount() }}
+      </span>
+
+      @if (productService.eventsCount() > 0) {
+      <button
+        class="clear-cart-btn bg-white text-red-600 px-3 py-1 rounded-lg text-sm font-medium hover:bg-red-100 transition"
+        (click)="clearSchedule(); $event.stopPropagation()"
+      >
+        Clear Schedule
+      </button>
+      }
+    </div>
+
+    <!-- <app-viewing-schedule *ngIf="showViewings"></app-viewing-schedule> -->
+
+    <!-- Heart Icon -->
+    <div class="cart-icon relative flex items-center space-x-1">
+      <i class="material-icons text-2xl">favorite</i>
+      <span
+        class="cart-item-count absolute -top-2 -right-3 bg-white text-red-600 text-xs font-bold px-1.5 py-0.5 rounded-full shadow"
+      >
+        {{ productService.cartItemCount() }}
+      </span>
+    </div>
+
+    <!-- Cart Total -->
+    <span class="btw-cart-total text-lg font-semibold">
+      {{
+        productService.productCartTotal()
+          | currency : "KES " : "symbol" : "1.0-0"
+      }}
+    </span>
+
+    <!-- Clear Button -->
+    @if (productService.cartItemCount() > 0) {
+    <button
+      class="clear-cart-btn bg-white text-red-600 px-3 py-1 rounded-lg text-sm font-medium hover:bg-red-100 transition"
+      (click)="clearCart()"
+    >
+      Clear Favourites
+    </button>
+    }
+  </div>
+</nav>

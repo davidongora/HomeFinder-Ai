@@ -1,0 +1,74 @@
+<div
+  class="chat-container fixed bottom-4 right-4 w-full max-w-md z-50 shadow-2xl hidden md:block"
+>
+  <!-- Agent window with fixed height -->
+  <div
+    class="agent-window bg-white rounded-2xl border border-gray-200 overflow-hidden flex flex-col h-[700px]"
+  >
+    <!-- Fixed Header -->
+    <div
+      class="agent-header bg-gradient-to-r from-purple-500 to-blue-500 text-white px-4 py-3 flex-shrink-0"
+    >
+      <h3 class="text-lg font-semibold">🏡 HomeFinder Assistant</h3>
+    </div>
+
+    <!-- Scrollable Messages Area -->
+    <div
+      #messagesContainer
+      class="messages-container flex-1 overflow-y-auto px-4 py-3 space-y-4 bg-gray-50 scrollbar-thin scrollbar-thumb-purple-500 scrollbar-track-gray-200"
+    >
+      @for (message of messageHistory(); track $index) {
+      <div
+        class="message flex"
+        [ngClass]="{
+          'justify-end': message.isUser,
+          'justify-start': !message.isUser
+        }"
+      >
+        <div
+          class="message-bubble px-4 py-2 rounded-xl max-w-xs shadow"
+          [ngClass]="{
+            'bg-blue-500 text-white': message.isUser,
+            'bg-purple-100 text-gray-800': !message.isUser
+          }"
+        >
+          {{ message.text }}
+        </div>
+      </div>
+      }
+    </div>
+
+    <!-- Fixed Suggestions -->
+    <div
+      class="suggestion-pills flex flex-wrap gap-2 px-4 py-2 border-t border-gray-200 bg-white flex-shrink-0"
+    >
+      @if (options.length > 1) { @for (option of options; track $index) {
+      <div
+        class="pill bg-purple-100 text-purple-800 px-3 py-1 text-xs rounded-full cursor-pointer hover:bg-purple-200"
+      >
+        <button (click)="handleClickOption(option)">{{ option.label }}</button>
+      </div>
+      } }
+    </div>
+
+    <!-- Fixed Input -->
+    <div
+      class="input-row px-4 py-3 bg-white border-t border-gray-200 flex items-center gap-2 flex-shrink-0"
+    >
+      <input
+        type="text"
+        id="userInput"
+        [(ngModel)]="userInput"
+        placeholder="Ask me about properties..."
+        (keydown.enter)="sendMessage()"
+        class="flex-1 px-3 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-purple-500 text-sm"
+      />
+      <button
+        class="send-button bg-purple-500 hover:bg-purple-600 text-white rounded-full p-2"
+        (click)="sendMessage()"
+      >
+        <span class="material-icons">send</span>
+      </button>
+    </div>
+  </div>
+</div>
