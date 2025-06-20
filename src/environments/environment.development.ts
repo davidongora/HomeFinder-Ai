@@ -1,7 +1,7 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: process.env['apiKey'] || 'dummy-key-for-build',
+    apiKey: process.env['apiKey'] || 'AIzaSyA1234567890abcdefghijklmnopqrstuv',
     authDomain: process.env['authDomain'] || 'dummy-key-for-build',
     projectId: process.env['projectId'] || 'dummy-key-for-build',
     storageBucket: process.env['storageBucket'] || 'dummy-key-for-build',

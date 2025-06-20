@@ -4,6 +4,8 @@ const path = require('path');
 const envPath = path.resolve(__dirname, '../src/environments/environment.prod.ts');
 const templatePath = path.resolve(__dirname, '../src/environments/environment.template.ts');
 
+require('dotenv').config();
+
 let template = fs.readFileSync(templatePath, 'utf-8');
 console.log('reading Firebase environment.prod.ts generated');
 
@@ -18,3 +20,8 @@ template = template
 
 fs.writeFileSync(envPath, template);
 console.log('✅ Firebase environment.prod.ts generated');
+
+console.log('📦 Firebase Config:', {
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+    // ... log the rest if needed
+  });
