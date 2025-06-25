@@ -89,7 +89,7 @@ export class AgentWindowComponent {
 
 
   public options = [
-    { label: 'Clear Cart' },
+    { label: 'Clear Favorites' },
     { label: 'View Products' },
     { label: 'Find an agent by name' },
     { label: 'Schedule house viewing' },

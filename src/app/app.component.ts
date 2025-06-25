@@ -1,8 +1,9 @@
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { AgentWindowComponent } from './components/agent-window/agent-window.component';
 import { ProductService } from './services/product.service';
+import { inject } from '@vercel/analytics';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,13 @@ import { ProductService } from './services/product.service';
 export class AppComponent {
   title = 'bytewise';
 
-  productService = inject(ProductService);
+  products: any[] = []; 
 
-  products = this.productService.getProducts();
+  constructor(
+    public productService: ProductService
+  ) {
+    inject();
+    this.products = this.productService.getProducts();
+  }
+
 }
