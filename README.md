@@ -2,7 +2,7 @@
 
 ## About This Codelab
 
-This is a codelab that demonstrates how to build an AI-powered e-commerce application using Angular and Google's Vertex AI. Through this codelab, developers can learn how to implement:
+This is a codelab that demonstrates how to build an AI-powered property finder application using Angular and Google's Vertex AI. Through this codelab, developers can learn how to implement:
 
 - Integration with Google's Vertex AI and Gemini 2.0 model
 - Function calling capabilities to perform actions like retrieving product information and adding items to cart
