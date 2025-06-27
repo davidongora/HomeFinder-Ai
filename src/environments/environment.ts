@@ -3,7 +3,7 @@ export const environment = {
   firebaseConfig: {
     apiKey: 'apiKey',
     authDomain: 'authDomain',
-    projectId: 'projectId',
+    projectId: 'byte-app-lab1',
     storageBucket: 'storageBucket',
     messagingSenderId: 'messagingSenderId',
     appId: 'appId',
